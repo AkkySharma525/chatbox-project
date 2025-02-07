@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.admin-container {
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+h3 {
+    color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+ul li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #ececec;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#message-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    background: white;
+}
+
+#message {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .admin-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #message-input {
+        padding: 10px;
+    }
+
+    #message {
+        padding: 8px;
+    }
+
+    button {
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+    }
+}
+#messages-list {
+    flex-grow: 1;
+    overflow-y: auto; /* Enables scrolling */
+    max-height: 300px; /* Limit the height to keep it within the container */
+}
+#messages-list {
+    overflow-y: auto;      /* Enables vertical scrolling */
+    flex: 1;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}

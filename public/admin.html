@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Admin Dashboard</h1>
+        <h3>Messages</h3>
+        <ul id="messages-list">
+            <!-- Messages will appear here -->
+        </ul>
+        
+        <form id="send-message-form">
+            <div id="message-input">
+                <input type="text" id="message" placeholder="Reply a message..." required>
+                <button type="submit">➤</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Include Socket.IO and Admin Script -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
